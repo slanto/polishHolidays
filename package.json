@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/slanto/polishHolidays/issues"
   },
-  "homepage": "https://github.com/slanto/polishHolidays#readme"
+  "homepage": "https://github.com/slanto/polishHolidays#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0"
+  }
 }
