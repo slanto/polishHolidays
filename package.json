@@ -1,0 +1,23 @@
+{
+  "name": "polishholidays",
+  "version": "1.0.0",
+  "description": "information about polish holidays",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slanto/polishHolidays.git"
+  },
+  "keywords": [
+    "holidays",
+    "polish"
+  ],
+  "author": "slanto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slanto/polishHolidays/issues"
+  },
+  "homepage": "https://github.com/slanto/polishHolidays#readme"
+}
