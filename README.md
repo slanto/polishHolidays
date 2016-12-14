@@ -1,11 +1,11 @@
 # polishHolidays
 Information about polish holidays
 
-Setup
+Install dependencies:
 
 <code>npm init</code>
 
-Run tests
+Execute tests:
 
 <code>karma start</code>
 
