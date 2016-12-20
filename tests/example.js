@@ -21,10 +21,10 @@ describe('PolishHolidays', function () {
         expect(polishHolidays.easterSunday(2017)).toBeDefined();
     });
     it('polishHolidays.easterSunday(2017) should return easter date', function () {
-        expect(polishHolidays.easterSunday(2017)).toEqual(new Date('Sun Apr 16 2017'));
+        expect(polishHolidays.easterSunday(2017)).toEqual(new Date(Date.UTC(2017, 3, 16)));
     });
     it('polishHolidays.easterSunday(2016) should return easter date', function () {
-        expect(polishHolidays.easterSunday(2016)).toEqual(new Date('Sun Mar 27 2016'));
+        expect(polishHolidays.easterSunday(2016)).toEqual(new Date(Date.UTC(2016, 2, 27)));
     });
     // it('polishHolidays.easterSunday(-1) should return invalid year exception', function() {
     //     expect(polishHolidays.easterSunday(-1)).toThrow();
@@ -33,13 +33,15 @@ describe('PolishHolidays', function () {
         //expect(polishHolidays.all(2017)).toBeDefined();
     });
     it('polishHolidays.all(2017) should return all holidays', function () {
-        // expect(polishHolidays.all(2017)).toEqual({
-        //     0: [
-        //         { date: new Date('Sun Jan 01 2017'), description: 'New Year\'s Day' },
-        //         { date: new Date('Fri Jan 06 2017'), description: 'Epiphany' }],
-        //     3: [
-        //         { date: new Date('Sun Apr 16 2017'), description: 'Easter Day' },
-        //         { date: new Date('Sun Apr 17 2017'), description: 'Easter Monday' }]
-        // });
+        expect(polishHolidays.all(2017)).toEqual({
+            0: [
+                { date: new Date(Date.UTC(2017, 0, 1)), description: 'New Year\'s Day' },
+                { date: new Date(Date.UTC(2017, 0, 6)), description: 'Epiphany' }
+               ],
+            3: [
+                { date: new Date(Date.UTC(2017, 3, 16)), description: 'Easter Day' },
+                { date: new Date(Date.UTC(2017, 3, 17)), description: 'Easter Monday' }
+               ]
+        });
     });
 });
