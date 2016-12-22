@@ -23,8 +23,14 @@ describe('PolishHolidays', function () {
     it('polishHolidays.easterSunday(2017) should return easter date', function () {
         expect(polishHolidays.easterSunday(2017)).toEqual(new Date(Date.UTC(2017, 3, 16)));
     });
-    it('polishHolidays.easterSunday(2016) should return easter date', function () {
-        expect(polishHolidays.easterSunday(2016)).toEqual(new Date(Date.UTC(2016, 2, 27)));
+    it('polishHolidays.easterMonday() should be defined', function () {
+        expect(polishHolidays.easterMonday(2017)).toBeDefined();
+    });
+    it('polishHolidays.easterMonday(2017) should return easter date', function () {
+        expect(polishHolidays.easterMonday(2017)).toEqual(new Date(Date.UTC(2017, 3, 17)));
+    });
+    it('polishHolidays.easterSunday(2006) should return easter date', function () {
+        expect(polishHolidays.easterSunday(2006)).toEqual(new Date(Date.UTC(2006, 3, 16)));
     });
     it('polishHolidays.easterSunday(-1) should return invalid year exception', function () {
         expect(function () { polishHolidays.easterSunday(-1) }).toThrow(new Error("Invalid year -1"));
