@@ -6,7 +6,7 @@ describe('first sample test', function () {
         var date = new Date('27 Jan 2017');
         expect(date.getDate()).toEqual(27);
     });
-    it('DateTime.getDate() returns day as a number', function () {
+    it('DateTime.setDate() sets new day in date', function () {
         var date = new Date('27 Jan 2017');
         var nextDay = new Date(date.setDate(date.getDate() + 1));
         expect(nextDay.getDate()).toEqual(28);
