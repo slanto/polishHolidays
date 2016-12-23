@@ -1,5 +1,5 @@
 # polishHolidays
-Information about polish holidays
+Information about polish bank holidays
 
 Install dependencies:
 
