@@ -3,7 +3,7 @@ Information about polish holidays
 
 Install dependencies:
 
-<code>npm init</code>
+<code>npm install</code>
 
 Execute tests:
 
