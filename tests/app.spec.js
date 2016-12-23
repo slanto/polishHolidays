@@ -47,6 +47,21 @@ describe('PolishHolidays', function () {
             3: [
                 { date: new Date(Date.UTC(2017, 3, 16)), description: 'Easter Day' },
                 { date: new Date(Date.UTC(2017, 3, 17)), description: 'Easter Monday' }
+            ],
+            4: [
+                { date: new Date(Date.UTC(2017, 4, 1)), description: 'Labour Day' },
+                { date: new Date(Date.UTC(2017, 4, 3)), description: 'Constitution Day' }
+            ],
+            7: [
+                { date: new Date(Date.UTC(2017, 7, 15)), description: 'Assumption of the Blessed Virgin Mary' }
+            ],
+            10: [
+                { date: new Date(Date.UTC(2017, 10, 1)), description: 'All Saints\' Day' },
+                { date: new Date(Date.UTC(2017, 10, 11)), description: 'National Independence Day' }
+            ],
+            11: [
+                { date: new Date(Date.UTC(2017, 11, 25)), description: 'Christmas Day' },
+                { date: new Date(Date.UTC(2017, 11, 26)), description: 'Second Day of Christmas' }
             ]
         });
     });
