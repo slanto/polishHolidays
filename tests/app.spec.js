@@ -13,7 +13,23 @@ describe('first sample test', function () {
     });
     it('should be true', function () {
         expect('bar').toBe('bar');
-    });
+    });    
+});
+
+describe('swap', function () {
+    it('polishHolidays.swap() should be defined', function () {
+        expect(polishHolidays.swap).toBeDefined();
+    });    
+    it('polishHolidays.swap(obj) should swap numbers', function () {
+        var obj = {
+            a: 9,
+            b: 5
+        };
+        
+        polishHolidays.swap(obj)
+        expect(obj.a).toEqual(5);
+        expect(obj.b).toEqual(9);
+    });    
 });
 
 describe('PolishHolidays', function () {
