@@ -44,6 +44,54 @@ describe('PolishHolidays', function () {
     it('polishHolidays.corpusChristi(1980) should return Corpus Chrisit date', function () {
         expect(polishHolidays.corpusChristi(1980)).toEqual(new Date(Date.UTC(1980, 5, 5)));
     });
+    it('polishHolidays.labourDay(2017) should be defined', function () {
+        expect(polishHolidays.labourDay(2017)).toBeDefined();
+    });
+    it('polishHolidays.labourDay(1980) should return Labour Day date', function () {
+        expect(polishHolidays.labourDay(1980)).toEqual(new Date(Date.UTC(1980, 4, 1)));
+    });
+    it('polishHolidays.epiphany(2017) should be defined', function () {
+        expect(polishHolidays.epiphany(2017)).toBeDefined();
+    });
+    it('polishHolidays.epiphany(1980) should return Epiphany date', function () {
+        expect(polishHolidays.epiphany(1980)).toEqual(new Date(Date.UTC(1980, 0, 6)));
+    });
+    it('polishHolidays.constitutionDay(2017) should be defined', function () {
+        expect(polishHolidays.constitutionDay(2017)).toBeDefined();
+    });
+    it('polishHolidays.constitutionDay(1980) should return Constitution Day date', function () {
+        expect(polishHolidays.constitutionDay(1980)).toEqual(new Date(Date.UTC(1980, 4, 3)));
+    });
+    it('polishHolidays.assumptionOfBlessedVirginMary(2017) should be defined', function () {
+        expect(polishHolidays.assumptionOfBlessedVirginMary(2017)).toBeDefined();
+    });
+    it('polishHolidays.assumptionOfBlessedVirginMary(1980) should return Assumption of the Blessed Virgin Mary date', function () {
+        expect(polishHolidays.assumptionOfBlessedVirginMary(1980)).toEqual(new Date(Date.UTC(1980, 7, 15)));
+    });
+    it('polishHolidays.allSaintsDay(2017) should be defined', function () {
+        expect(polishHolidays.allSaintsDay(2017)).toBeDefined();
+    });
+    it('polishHolidays.allSaintsDay(1980) should return All Saints\' Day date', function () {
+        expect(polishHolidays.allSaintsDay(1980)).toEqual(new Date(Date.UTC(1980, 10, 1)));
+    });
+    it('polishHolidays.nationalIndependenceDay(2017) should be defined', function () {
+        expect(polishHolidays.nationalIndependenceDay(2017)).toBeDefined();
+    });
+    it('polishHolidays.nationalIndependenceDay(1980) should return National Independence Day date', function () {
+        expect(polishHolidays.nationalIndependenceDay(1980)).toEqual(new Date(Date.UTC(1980, 10, 11)));
+    });
+    it('polishHolidays.christmasDay(2017) should be defined', function () {
+        expect(polishHolidays.christmasDay(2017)).toBeDefined();
+    });
+    it('polishHolidays.christmasDay(1980) should return Christmas Day date', function () {
+        expect(polishHolidays.christmasDay(1980)).toEqual(new Date(Date.UTC(1980, 11, 25)));
+    });
+    it('polishHolidays.secondDayOfChristmas(2017) should be defined', function () {
+        expect(polishHolidays.secondDayOfChristmas(2017)).toBeDefined();
+    });
+    it('polishHolidays.secondDayOfChristmas(1980) should return Second Day of Christmas date', function () {
+        expect(polishHolidays.secondDayOfChristmas(1980)).toEqual(new Date(Date.UTC(1980, 11, 26)));
+    });
     it('polishHolidays.easterSunday(-1) should return invalid year exception', function () {
         expect(function () { polishHolidays.easterSunday(-1) }).toThrow(new Error("Invalid year -1"));
     });
