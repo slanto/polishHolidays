@@ -11,6 +11,9 @@ describe('first sample test', function () {
         var nextDay = new Date(date.setDate(date.getDate() + 1));
         expect(nextDay.getDate()).toEqual(28);
     });
+    it('should be true', function () {
+        expect('bar').toBe('bar');
+    });
 });
 
 describe('PolishHolidays', function () {
