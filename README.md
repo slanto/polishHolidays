@@ -1,9 +1,9 @@
 # polishHolidays
-Information about polish holidays
+Information about polish bank holidays
 
 Install dependencies:
 
-<code>npm init</code>
+<code>npm install</code>
 
 Execute tests:
 
